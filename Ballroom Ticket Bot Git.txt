@@ -1,0 +1,24 @@
+dg#!/bin/bash 
+while true; do
+
+
+	echo "Colton Badge"
+	COLTON_CHECK=$(curl -X POST -d "session_id=8694ED3E-9E24-11EF-A314-A150150D64F6" -d "convention_id=958282DA-7E53-11EE-9E54-A0025BDDA30C" -d "badge_id='32 digit badge_id goes here'" -d "event_id=CBBCBC70-7124-11EF-ABEE-C699D2AD0752" -d "event_id=D6F7BCCE-7125-11EF-8B5F-D192C3E7090B" -d "event_id=06DAD25A-7126-11EF-A9F4-CBCA563B0042" -d "event_id=5ADB1A40-7126-11EF-8B25-DC4E03A6FCFB" -d "event_id=78535E16-7126-11EF-8646-697B02AE5B78" https://tabletop.events/api/conventioncart//ticket/multiple >> "C:\Users\xxx\Desktop\ticketbot_output.txt")
+	echo $COLTON_CHECK
+
+	echo "Zeke Badge"
+	ZEKE_CHECK=$(curl -X POST -d "session_id=8694ED3E-9E24-11EF-A314-A150150D64F6" -d "convention_id=958282DA-7E53-11EE-9E54-A0025BDDA30C" -d "badge_id='32 digit badge_id goes here'" -d "event_id=CBBCBC70-7124-11EF-ABEE-C699D2AD0752" -d "event_id=D6F7BCCE-7125-11EF-8B5F-D192C3E7090B" -d "event_id=06DAD25A-7126-11EF-A9F4-CBCA563B0042" -d "event_id=5ADB1A40-7126-11EF-8B25-DC4E03A6FCFB" -d "event_id=78535E16-7126-11EF-8646-697B02AE5B78" https://tabletop.events/api/conventioncart//ticket/multiple >> "C:\Users\xxx\Desktop\ticketbot_output.txt")
+	echo $ZEKE_CHECK
+
+	echo "Tabbie Badge"
+	TABBIE_CHECK=$(curl -X POST -d "session_id=8694ED3E-9E24-11EF-A314-A150150D64F6" -d "convention_id=958282DA-7E53-11EE-9E54-A0025BDDA30C" -d "badge_id='32 digit badge_id goes here'" -d "event_id=CBBCBC70-7124-11EF-ABEE-C699D2AD0752" -d "event_id=D6F7BCCE-7125-11EF-8B5F-D192C3E7090B" -d "event_id=06DAD25A-7126-11EF-A9F4-CBCA563B0042" -d "event_id=5ADB1A40-7126-11EF-8B25-DC4E03A6FCFB" -d "event_id=78535E16-7126-11EF-8646-697B02AE5B78" https://tabletop.events/api/conventioncart//ticket/multiple >> "C:\Users\xxx\Desktop\ticketbot_output.txt")
+	echo $TABBIE_CHECK
+
+	echo "Natalie Badge"
+	NATALIE_CHECK=$(curl -X POST -d "session_id=CF421EAE-A9AE-11EF-927A-726C9A1F6D85" -d "convention_id=958282DA-7E53-11EE-9E54-A0025BDDA30C" -d "badge_id='32 digit badge_id goes here'" -d "event_id=CBBCBC70-7124-11EF-ABEE-C699D2AD0752" -d "event_id=D6F7BCCE-7125-11EF-8B5F-D192C3E7090B" -d "event_id=06DAD25A-7126-11EF-A9F4-CBCA563B0042" -d "event_id=5ADB1A40-7126-11EF-8B25-DC4E03A6FCFB" -d "event_id=78535E16-7126-11EF-8646-697B02AE5B78" https://tabletop.events/api/conventioncart//ticket/multiple >> "C:\Users\xxx\Desktop\ticketbot_output.txt")
+	echo $NATALIE_CHECK
+
+	echo "Sleeping for 1 second"
+	sleep 1
+
+done
