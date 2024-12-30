@@ -1,0 +1,12 @@
+#!/bin/bash
+while true; do
+	echo "VIP Call"
+	VIP_RESPONSE=$(curl "https://tabletop.events/api/conventioncart//badge" -X POST -H "Cookie:session_id=088008AE-2285-11EF-A8B0-C89E423EE727" -d "badgetype_id='32 digit VIP badgeid goes here.'" -d "firstname='First name goes here.'" -d "lastname='Last name goes here.'" --data-raw "email='Email goes here.'" -d "Zipcode='Zipcode goes here.'" -d "Howdidyouhearaboutourevent= From a friend or family member" -d "convention_id=958282DA-7E53-11EE-9E54-A0025BDDA30C" >> "C:\Users\xxx\Desktop\ticketbot_output.txt")
+	echo $VIP_RESPONSE
+
+	echo "GA Call"
+	GA_RESPONSE=$(curl "https://tabletop.events/api/conventioncart//badge" -X POST -H "Cookie:session_id=088008AE-2285-11EF-A8B0-C89E423EE727" -d "badgetype_id='32 digit GA badgeid goes here." -d "firstname='First name goes here.'" -d "lastname='Last name goes here.'" --data-raw "email='Email goes here.'" -d "Zipcode='Zipcode goes here.'" -d "Howdidyouhearaboutourevent= From a friend or family member" -d "convention_id=958282DA-7E53-11EE-9E54-A0025BDDA30C" >> "C:\Users\xxx\Desktop\ticketbot_output.txt")
+	echo $GA_RESPONSE
+	echo "Sleeping for 1 second"
+	sleep 1
+done
